@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division Part</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .div1, #div2, #div3 {
+            display: inline-block;     /* key point: inline-block children */
+            width: 30%;                /* so 3 can fit in a row */
+            vertical-align: top;       /* align from top */
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid red;
+            color: white;
+            text-align: justify;
+        }
+        .div1{
+            background-color: yellowgreen;
+        }
+        #div2{
+            background-color: lightblue;
+        }
+        #div3{
+            background-color: lightcoral;
+        }
+        .container{
+            display: inline-block;   /* container itself is inline-block */
+            width: 100%;             /* full width */
+            background-color: lightgray;
+            padding: 5px;
+            text-align: center;      /* centers inline-block children */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            <h1>HTML</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, iure? Nulla ipsam deserunt rem sed aspernatur voluptas, numquam nesciunt!</p>
+        </div>
+        <div id="div2">
+            <h1>CSS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos blanditiis soluta quo iusto eveniet cupiditate molestiae odit laudantium cumque unde?</p>
+        </div>
+        <div id="div3">
+            <h1>JAVA</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis illo est voluptate quo ex sapiente magni quis voluptatem, adipisci suscipit.</p>
+        </div>
+    </div>
+</body>
+</html>
