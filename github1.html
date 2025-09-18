@@ -1,0 +1,67 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    height: 100vh;
+}
+.container__img {
+    height: 300px;
+    width: 100%; /* or any fixed width you prefer */
+    /* border: 1px solid red; */
+    background-image: url("klulogo.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 250px 100px;
+}
+
+.container__text{
+    flex: 1;
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.container_text_1{
+    font-size: 5vw;
+    color: red;
+}
+.container_text_2,
+.container_text_3,
+.container_text_4{
+    font-size: 4vw;
+    color: blue;
+}
+
+/* Media Query for Mobile Layout*/
+@media (max-width : 600px){
+
+
+.container{
+    flex-direction: column;
+}
+.container__img{
+    background-size: 700px 80px;
+    flex:none;
+    height: 40vh;
+}
+.container__text{
+    flex: none;
+    height: 60vh;
+    
+}
+.container_text_1{
+    font-size: 5vw;
+    color: yellowgreen;
+}
+.container_text_2,
+.container_text_3,
+.container_text_4{
+    font-size: 1.5rem;
+    display: none;
+}
+}
