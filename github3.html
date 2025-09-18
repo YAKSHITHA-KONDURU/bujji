@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID USECASES</title>
+    <style>
+        .parent{
+            height: 100vh;/100% of the viewport height/
+            display: grid;/grid container/
+            grid-template-rows: 10% 80% 10%;/3 rows/
+            grid-template-columns: 15% 70% 15%;/3 columns/
+
+        }
+        .header{
+            background-color:lightcoral ;
+            grid-column:1/4;/1st column to 4th column/
+            grid-row:1/2;/1st row to 2nd row/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+    }
+        .leftmenu{
+            background-color:lightblue ;
+            grid-column:1/2;/1st column to 2nd column/
+            grid-row:2/3;/2nd row to 3rd row/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+    }
+                .main{
+            background-color:brown ;
+            grid-column:2/3;/2nd column to 3rd column/
+            grid-row:2/3;/2nd row to 3rd row/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+    }
+
+        .rightmenu{
+            background-color:lightblue ;
+            grid-column:3/4;/3rd column to 4th column/
+            grid-row:2/3;/2nd row to 3rd row/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+    }
+
+        .footer{
+            background-color:lightcoral;
+            grid-column:1/4;/1st column to 4th column/
+            grid-row:3/4;/3rd row to 4th row/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+    }
+
+    </style>
+</head>
+<body>
+<!----Parent-->
+<section class="parent">
+<!---GRID ITEM1-->
+<section class="header">
+    <h1>KL UNIVERSITY</h1>
+</section>
+<!---GRID ITEM2-->
+<section class="leftmenu">LeftMenu</section>
+<!---GRID ITEM3-->
+<section class="main">Main</section>
+<!---GRID ITEM4-->
+<section class="rightmenu">RightMenu</section>
+<!---GRID ITEM5-->
+<section class="footer">Fotter</section>
+</section>
+</body>
+</html>
